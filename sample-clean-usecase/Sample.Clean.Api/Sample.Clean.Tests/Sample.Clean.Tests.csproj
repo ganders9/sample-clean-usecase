@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Common\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.14.7" />
+    <PackageReference Include="xunit.assert" Version="2.4.1" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sample.Clean.Application\Sample.Clean.Application.csproj" />
+    <ProjectReference Include="..\Sample.Clean.Core\Sample.Clean.Core.csproj" />
+    <ProjectReference Include="..\Sample.Clean.Infrastructure\Sample.Clean.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

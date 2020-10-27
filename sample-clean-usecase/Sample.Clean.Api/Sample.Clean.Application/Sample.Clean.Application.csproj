@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sample.Clean.Core\Sample.Clean.Core.csproj" />
+    <ProjectReference Include="..\Sample.Clean.Infrastructure\Sample.Clean.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UseCases\Validations\" />
+  </ItemGroup>
+
+</Project>
